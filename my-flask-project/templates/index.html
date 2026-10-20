@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>To-Do List</title>
+
+</head>
+<body>
+
+<center><h1>Hello from HTML!</h1></center>
+<p>This web page is being served by Flask using a template.</p>
+
+<center><h1 style="width:100%">To Do</h1></center>
+<table style="width:100%">
+  <tr>
+    <th> 
+      <form action="/add" method="post" style="height:100px" style="width:100px">
+        <input type="text" id="username" name="task" placeholder="Enter user here:">
+      </form>
+    </th>
+  </tr>
+    <tr>
+    <th> 
+      <form action="/add" method="post">
+        <input type="text" id="password" name="task" placeholder="Enter password here:">
+      </form>
+    </th>
+  </tr>
+</table>
+
+</body>
+</html>
