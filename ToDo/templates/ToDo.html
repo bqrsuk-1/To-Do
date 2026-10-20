@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>To Do Turtle :)</title>
+{% endblock %}
+
+{% block body %}
+<header>
+  <h1>To Do Turtle</h1>
+  <a href="/">Main</a>
+</header>
+
+<style>
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2e8b57;
+    color: lightgreen;
+    font-family: 'Pacifico', cursive;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header a {
+    position: absolute;
+    right: 20px;
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+</style>
+{% endblock %}
