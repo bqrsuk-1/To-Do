@@ -18,7 +18,7 @@ In terminal: go into main folder( cd ToDo) and type python app.py, in terminal y
 
 # Few scene how you can use this: 
   1) You can use it on your computer in browser to write task you need to do
-  2) If your phone and computer connected to one wife connection you can use this web app in your phone
+  2) If your phone and computer connected to one WiFi connection you can use this web app in your phone
 
 # How does it work: 
   You run a local host server on your computer and in browser you add, change status, delete any task you want, by doing this things in browser you work with database file on your computer.
