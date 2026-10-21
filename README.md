@@ -4,9 +4,9 @@ To-Do Project Week Site
 # Full instruction how to use it on your own computer: 
 
 # First you need to download few things:
-  python(latest version)
-  flask framework for python
-  flask sqlalchemy 
+  python(latest version);
+  flask framework for python;
+  flask sqlalchemy;
 
 # How to use it: 
   When you install everything you need, you need to check if you install from github repo files in correct order
