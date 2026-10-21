@@ -9,7 +9,7 @@ To-Do Project Week Site
   flask sqlalchemy;
 
 # How to use it: 
-  When you install everything you need, you need to check if you install from github repo files in correct order
+  When you install everything you need, you need to check out from github repo files in correct order.
 
   You need to have main folder(for example ToDo), in this folder paste file app.py, and paste folder templates(DO NOT CHANGE NAME OF templaetes FOLDER) which has 3 file: base.html, main.html and ToDo.html, after you need in project main folder(ToDo) add new folder cald instance and copy from repo file ToDo.db(this is a empty database file) 
 
