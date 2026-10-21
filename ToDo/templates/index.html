@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<header>
+  <h1>To Do Turtle</h1>
+  <a href="/ToDo">Lists</a>
+</header>
+
+<style>
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2e8b57;
+    color: lightgreen;
+    font-family: 'Pacifico', cursive;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header a {
+    position: absolute;
+    right: 20px;
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+</head>
+<body>
+
+
+<center><h1 style="width:100%">To Do</h1></center>
+<table style="width:100%">
+  <tr>
+    <th>
+      <form action="/ToDo" method="post" style="height:100px" style="width:100px">
+        <input type="text" id="username" name="task" placeholder="Enter user here:">
+      </form>
+    </th>
+  </tr>
+    <tr>
+    <th>
+      <form action="/ToDo" method="post">
+        <input type="text" id="password" name="task" placeholder="Enter password here:">
+      </form>
+    </th>
+  </tr>
+</table>
+
+</body>
+</html>

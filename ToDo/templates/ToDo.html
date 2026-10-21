@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>To Do Turtle :)</title>
+{% endblock %}
+
+{% block body %}
+<header>
+  <h1>To Do Turtle</h1>
+  <a href="/">Main</a>
+</header>
+
+<style>
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2e8b57;
+    color: lightgreen;
+    font-family: 'Pacifico', cursive;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header a {
+    position: absolute;
+    right: 20px;
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+  .form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .form-card {
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2e8b57;
+    background-color: #ffffff;
+</style>
+
+<div class="form-container">
+  <h2 class="mb-3">Add New Task</h2>
+  <div class="form-card">
+    <form method="post">
+      <input type="text" class="form-control mb-3" name="name" id="name" placeholder="Enter Your Task" required>
+      <button class="btn btn-success w-100" type="submit">Add Task</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

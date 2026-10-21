@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>To Do Turtle :)</title>
+{% endblock %}
+
+{% block body %}
+<header>
+  <h1>To Do Turtle</h1>
+  <a href="/ToDo">Add New</a>
+</header>
+
+<style>
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2e8b57;
+    color: lightgreen;
+    font-family: 'Pacifico', cursive;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header a {
+    position: absolute;
+    right: 20px;
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+  .table-container {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .table-rounded {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2e8b57;
+  }
+
+  .table-rounded table {
+    margin-bottom: 0;
+  }
+</style>
+
+<div class="table-container">
+  <h2 class="mb-3">To Do</h2>
+
+  {% if todos %}
+    <div class="table-rounded">
+      <table class="table table-striped align-middle">
+        <thead class="table-success">
+          <tr>
+            <th>Task</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for todo in todos %}
+          <tr>
+            <td>{{ todo.name }}</td>
+            <td>
+              <form action="/update/{{ todo.id }}" method="post">
+                <select name="status" class="form-select form-select-sm" onchange="this.form.submit()">
+                  <option value="Planned" {% if todo.status == "Planned" %}selected{% endif %}>Planned</option>
+                  <option value="In Progress" {% if todo.status == "In Progress" %}selected{% endif %}>In Progress</option>
+                  <option value="Done" {% if todo.status == "Done" %}selected{% endif %}>Done</option>
+                </select>
+              </form>
+            </td>
+            <td style="width: 1%; white-space: nowrap;">
+              <form action="/delete/{{ todo.id }}" method="post" style="display:inline;">
+                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <p>There is no task. Click on "Add New", to add a new task!</p>
+  {% endif %}
+</div>
+{% endblock %}
