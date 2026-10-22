@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>About - To Do Turtle</title>
+{% endblock %}
+
+{% block body %}
+<header>
+  <h1>To Do Turtle</h1>
+  <nav>
+    <a href="/">Main</a>
+    <a href="/ToDo">Add New</a>
+  </nav>
+  <img src="/static/logo.png" alt="Turtle Logo" class="logo">
+</header>
+
+<style>
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #2e8b57;
+    color: lightgreen;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header nav {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 16px;
+  }
+
+  header a {
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .about-container {
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+  }
+</style>
+
+<main class="about-container">
+    <h12>Creators:</h12>
+   <h2>Contrubutors: GitHub usernames</h2>
+    <h3>Arturs (bqrusk)</h3>
+    <h3> Adrians (123ttey)</h3>
+    <h3>Toms (TonkGoBoom)</h3>
+    <h3>  Marats (EMBS733   )</h3>
+
+</main>
+{% endblock %}
