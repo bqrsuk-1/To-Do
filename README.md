@@ -11,10 +11,10 @@ To-Do Project Week Site
 # How to use it: 
   When you install everything you need, you need to check out from github repo files in correct order.
 
-  You need to have main folder(for example ToDo), in this folder paste file app.py, and paste folder templates(DO NOT CHANGE NAME OF templaetes FOLDER) which has 3 file: base.html, main.html and ToDo.html, after you need in project main folder(ToDo) add new folder cald instance and copy from repo file ToDo.db(this is a empty database file) 
+  You need to have main folder (for example ToDo), in this folder paste file app.py, and paste folder templates (DO NOT CHANGE NAME OF templates FOLDER) which has 3 file: base.html, main.html and ToDo.html, after you need in project main folder (ToDo) add new folder called instance and copy from repo file ToDo.db (this is a empty database file) 
 
   After you install everything correctly you can in terminal run thin app
-In terminal: go into main folder( cd ToDo) and type python app.py, in terminal you will see HTTP:// link, copy and paste it in browser, congratulations, now you can use this app.
+In terminal: go into main folder ( cd ToDo) and type python app.py, in terminal you will see HTTP:// link, copy and paste it in browser, congratulations, now you can use this app.
 
 # Few scene how you can use this: 
   1) You can use it on your computer in browser to write task you need to do
