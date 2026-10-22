@@ -4,6 +4,7 @@ To-Do Project Week Site
 # Full instruction how to use it on your own computer: 
 
 # First you need to download few things:
+  Install ToDo folder with all files from github;
   python(latest version);
   flask framework for python;
   flask sqlalchemy;
